@@ -1,0 +1,108 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+@font-face {
+  font-family: "Unown";
+  src: url("../fonts/Unown.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GB";
+  src: url("../fonts/Early-GameBoy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #e0f8d0;
+  color: black;
+  font-family: Verdana;
+  /*background-image: url("../images/pokeball-tile.png");
+  background-repeat: repeat;*/
+  font-family: "GB", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -10px; /* prevents blur edges from showing */
+  background-image: url("../images/pokeball-tile.png");
+  background-repeat: repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+/*th:first-child td:first-child {
+  width: 1%;
+  white-space: nowrap;
+}*/
+
+tbody {
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Unown", sans-serif;
+  font-size: 1.75rem;
+  background-color: #88c070;
+  color: #204098;
+  height: 7vw;
+}
+
+.content {
+  background-color: #e0f8d0;
+  width: 55vw;
+  max-width: 1090px;
+  margin: 0 auto;
+  margin-top: 3vh;
+  min-height: 725px;
+  border-bottom: 20px solid #346856;
+  border-top: 20px solid #346856;
+  border-left: 7px solid #346856;
+  border-right: 7px solid #346856;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+  color: #081820;
+}
+.guide-div {
+  justify-content: center;
+  justify-self: center;
+}
+
+.guides {
+  border: 1px solid #346856;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guides th:first-child,
+.guides td:first-child {
+  width: 30%;
+  white-space: nowrap;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.flipped {
+  display: inline-block;
+  transform: scaleX(-1);
+}

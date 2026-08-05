@@ -8,8 +8,8 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "GB";
-  src: url("../fonts/Early-GameBoy.ttf") format("truetype");
+  font-family: "PKMN";
+  src: url("../fonts/Pokemon-Classic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -21,7 +21,7 @@ body {
   font-family: Verdana;
   /*background-image: url("../images/pokeball-tile.png");
   background-repeat: repeat;*/
-  font-family: "GB", sans-serif;
+  font-family: "PKMN", sans-serif;
 }
 
 body::before {
@@ -75,6 +75,7 @@ tbody {
   border-right: 7px solid #346856;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 30px;
   border-radius: 0px;
   color: #081820;
 }
@@ -94,15 +95,16 @@ tbody {
 .guides td:first-child {
   width: 30%;
   white-space: nowrap;
+  border-right: 1px solid #346856;
 }
+
+/*.guides th,
+.guides td {
+  border-bottom: 1px solid #346856;
+}*/
 
 .bottom-links {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-}
-
-.flipped {
-  display: inline-block;
-  transform: scaleX(-1);
 }

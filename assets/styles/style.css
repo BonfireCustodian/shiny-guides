@@ -60,6 +60,7 @@ tbody {
   background-color: #88c070;
   color: #204098;
   height: 7vw;
+  max-height: 140px;
 }
 
 .content {

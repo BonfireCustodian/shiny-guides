@@ -20,10 +20,279 @@
       <h1>Sev's Shiny Guides</h1>
     </div>
     <div class="content">
-      <a class="return" href="/index.html"
-        ><span class="flipped">~</span>-- return to link hub</a
-      >
+      <a class="return" href="/index.html"><-- return to link hub</a>
       <h1>GSC Shiny Hunting Guide</h1>
+      <div class="guide-header">
+        <h2>Key Information</h2>
+        <a href="#Method-0">Jump to guides</a>
+      </div>
+      <h3>How Shininess is Determined</h3>
+      <p>
+        Determining shininess works differently in gens 1 & 2 than in gens 3+.
+        Rather than using the player's trainer ID, secret ID, and the Pokémon's
+        personality value, Pokémon are shiny when they have a specific
+        <a href="/pages/guides/general/pokemon_terminology.html">DV spread</a>.
+        Specifically a Pokémon must have 10 speed, defense, and special DVs, and
+        2, 3, 6, 7, 10, 11, 14, or 15 attack DVs. You may also hear people say
+        that shiny Pokémon need either 0 or 8 HP DVs, but this is only partially
+        true and a misconception with how DVs are calculated. The HP DV is
+        calculated based on the other DVs, meaning that while every shiny
+        Pokémon will have 0 or 8, it's not technically a requirement for a
+        Pokémon to be shiny.
+      </p>
+      <p>
+        As gen 2 was the first generation with shiny Pokémon, Game Freak didn't
+        purposefully implement a shiny hunting method into the game. Because of
+        this many gen 2 hunts are full odds (1/8192).
+      </p>
+
+      <h3>Quirks</h3>
+      <p>
+        Using DVs to determine shininess introduced some quirks when interacting
+        with other attributes and mechanics that also used DVs.
+      </p>
+      <ul>
+        <li>
+          Pokemon with a 7:1 gender ratio may not be simultaneously shiny and
+          female. e.g. shiny starters can only be male.
+        </li>
+        <ul>
+          <li>
+            For a brief time poke transporter had a bug which randomly
+            determined gender rather than using the Attack DV of a Pokémon. This
+            meant that shiny females from gens 1 & 2 with a 7:1 gender ratio
+            were briefly possible from the virtual console games. This bug was
+            fixed in version 1.3
+          </li>
+        </ul>
+        <li>
+          Only Unown I and V can be shiny. (this is a pretty funny coincidence
+          considering DVs were replaced with IVs in gen 3)
+        </li>
+        <li>
+          Shiny Pokémon can only have a hidden power of Grass or Dragon with a
+          power of 49 or 69.
+        </li>
+        <li>
+          Two shiny Pokémon cannot breed because Pokémon with the same Defense
+          DV cannot breed.
+        </li>
+      </ul>
+      <h2 id="Method-0">Method 0 - Guaranteed Shinies</h2>
+      <p>
+        Red Gyarados is the only fixed shiny encounter in the gen 2 games. This
+        encounter happens in the Lake of Rage as part of the story and you will
+        not have another opportunity to catch it if you faint it. Catching this
+        Gyarados is important if you intend to breed for shinies (see Method 3
+        below.), whether you breed with Gyarados directly or use it catch a
+        shiny ditto in the Gen 1 games.
+      </p>
+      <h2>Method 1 - Random Encounters</h2>
+      <p class="warning">
+        Roaming legendary DVs are locked in when you first encounter them. This
+        makes them an SR hunt and not a RE hunt.
+      </p>
+      <p>
+        Almost no setup is required to do random encounter hunts. Simply find
+        where the Pokémon you want to hunt appears in the wild and encounter
+        Pokémon until it shines. Make sure to bring a
+        <a href="/pages/guides/general/useful_pokemon.html">catching Pokémon</a>
+        whenever possible and enough pokéballs to catch it.
+      </p>
+      <h2>Method 2 - Soft Resetting</h2>
+      <p>
+        You can soft reset for any gift or static Pokémon. The most obvious
+        examples of this are the starters and static legendaries. To hunt them
+        just save in front of the Pokémon (or who/what gives you the Pokémon)
+        and reset the game until it shines. Make sure you set your text speed to
+        fast to speed up text boxes. Also bring a
+        <a href="/pages/guides/general/useful_pokemon.html">catching Pokémon</a>
+        and pokéballs if applicable.
+      </p>
+      <h3>Starter Hunt Optimizations</h3>
+      <p>
+        There are a few extra things you can do to optimize the soft reset hunts
+        for starters. None of the optimizations save a huge amount of time on
+        their own, but when used together and over the course of thousands of
+        resets they will save you a *lot* of time.
+      </p>
+      <ol>
+        <li>
+          Play GS over C - Pokémon Crystal has more dialogue during this hunt.
+          If you aren't dead set on playing it consider hunting in Gold or
+          Silver instead.
+        </li>
+        <li>
+          Stand to the left of the table for Cyndaquil - If you're hunting
+          Cyndaquil you can stand to the left of the table allowing you to skip
+          the walk animation to the professor. This saves a few seconds per
+          reset.
+        </li>
+        <li>
+          Check their gender on the nickname screen - Normally you would want to
+          skip the nickname screen entirely, however in generation 2 Pokémon
+          with a 7:1 gender ratio cannot simultaneously be the minor gender (in
+          this case female) and shiny. Checking the gender on the nickname
+          screen allows you to reset ~20 seconds early for ~1/8 of your resets.
+          Since checking the screen only loses ~1.2 seconds on resets with a
+          male starter, this will save you time as long as ~1/16 of the resets
+          has a female which will almost surely happen, especially over the full
+          length of your hunt.
+        </li>
+        <li>
+          Reset if the HP stat isn't right - Shiny Pokémon in gen 2 will always
+          have an HP DV of 0 or 8. Because you can briefly see the HP of your
+          Pokémon before checking it's summary to see if it's shiny, you can
+          reset the game ~1 second early if you reset when the HP value doesn't
+          match one of the values corresponding to your starter in the table
+          below.
+        </li>
+      </ol>
+      <table class="gen2-tables">
+        <thead>
+          <td>Pokémon</td>
+          <td>0 HP DV</td>
+          <td>8 HP DV</td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cyndaquil</td>
+            <td>18</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>Totodile</td>
+            <td>20</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Chickorita</td>
+            <td>19</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Method 3 - Shiny Gene Breeding</h2>
+      <p>
+        Shiny breeding in gen 2 works because DVs are passed down from one
+        parent (the opposite gender parent or Ditto) and as discussed at the
+        beginning of this page, DVs determine if a Pokémon is shiny.
+      </p>
+      <h3>Odds</h3>
+      <p>
+        The exact odds will vary when not using ditto to carry shiny genes as
+        the gender of the child (and therefor the parent passing down DVs) is
+        random and two Pokémon with the ideal "shiny genes" cannot breed since
+        they have the same defense stat.
+      </p>
+      <p>
+        When breeding Pokémon with a 7:1 gender ratio (using a female shiny gene
+        parent) or using ditto, the odds are 1/64.
+      </p>
+      <h3>How DVs are passed down</h3>
+      <p>
+        DVs are generated when the egg is created and are passed down from the
+        opposite gender parent or Ditto if you're using one (Ditto will always
+        take priority.)
+      </p>
+      <ul>
+        <li>
+          The attack value is randomly generated. It also determines the gender
+          of the Pokémon which is important for the generation of other DVs when
+          not using Ditto.
+        </li>
+        <li>The defense value is passed down from the parent.</li>
+        <li>
+          The special value is passed down from the parent, but 50% of the time
+          it will have an offset of 8. E.g. a parent with a Special DV of 12
+          could either pass down 12 or 4 to the child.
+        </li>
+        <li>The speed DV is determined randomly.</li>
+        <li>The health DV is determined by the other stats</li>
+      </ul>
+      <h3>The Perfect Parent (Shiny Genes and Ditto)</h3>
+      <p>
+        To get the most out of shiny breeding you need a parent Pokémon with 10
+        defense DVs and 10 or 2 special DVs since those are the stats getting
+        passed down. Any shiny Pokémon will meet this criteria but you could
+        also just catch any Pokémon and check these two DVs.
+      </p>
+      <p>
+        Ditto is the most useful parent since it can breed with any Pokémon
+        trivializing this whole process and actually gives better odds in most
+        scenarios. A guide for obtaining a good ditto for breeding (with and
+        without using glitches) can be found in my
+        <a href="/pages/guides/general/useful_pokemon.html">useful Pokémon</a>
+        page.
+      </p>
+      <h2>Method 4 - Odd Egg</h2>
+      <p class="info">
+        The Odd Egg only exists in Pokemon Crystal, this section does not apply
+        to GS players
+      </p>
+      <p class="warning">
+        The Japanese version of Crystal required you to interact with the Mobile
+        Game Boy Adapter service to receive the Odd Egg, as such this method
+        doesn't (legitimately) work on the Japanese version of crystal anymore,
+        original or 3DS VC.
+      </p>
+      <h3>Explanation & Odds</h3>
+      <p>
+        The Odd Egg is pretty straight forward: You can get one per save file,
+        it can hatch into any of the baby pokemon introduced in Gen 2, and there
+        is a 14% chance of the hatched pokemon being shiny. The odds of each
+        possible pokemon being shiny, however, are not uniform; below is a table
+        with the odds that each pokemon is hatched from the egg, normal and
+        shiny. To hunt using the Odd egg simply save before obtaining it, hatch
+        it, and reset if you don't get the pokemon you want.
+      </p>
+      <table class="gen2-tables">
+        <thead>
+          <tr>
+            <td>Pokémon</td>
+            <td>Normal %</td>
+            <td>Shiny %</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pichu</td>
+            <td>8%</td>
+            <td>1%</td>
+          </tr>
+          <tr>
+            <td>Cleffa</td>
+            <td>16%</td>
+            <td>3%</td>
+          </tr>
+          <tr>
+            <td>Igglybuff</td>
+            <td>16%</td>
+            <td>3%</td>
+          </tr>
+          <tr>
+            <td>Tyrogue</td>
+            <td>10%</td>
+            <td>1%</td>
+          </tr>
+          <tr>
+            <td>Smoochum</td>
+            <td>14%</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <td>Elekid</td>
+            <td>12%</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <td>Magby</td>
+            <td>10%</td>
+            <td>2%</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div class="bottom-links">
       <a href="/pages/other/credits.html">credits</a>

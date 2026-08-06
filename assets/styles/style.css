@@ -172,7 +172,7 @@ tbody {
 .guides th,
 .guides td {
   width: 30%;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   border-right: 1px solid #346856;
   border-left: 1px solid #346856;
   border-top: 1px solid #346856;
